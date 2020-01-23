@@ -81,7 +81,7 @@ public class BookController {
     }
 
     @DeleteMapping("{id}")
-    public void delete(@PathVariable ){
-        
+    public void delete(@PathVariable Integer id){
+        bookDTOList.remove(findById(id));
     }
 }
